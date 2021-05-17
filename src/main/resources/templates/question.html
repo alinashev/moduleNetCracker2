@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question</title>
+</head>
+<body>
+<form action="/question" method="post">
+    <p th:text="${question}"></p>
+        <input type="text" id="answer" />
+    <input type="submit" value="GO"/>
+</form>
+<form action="/finish" method="back">
+    <input type="submit" value="Finish"/>
+</form>
+<form action="/back" method="back">
+    <input type="submit" value="Back"/>
+</form>
+</body>
+</html>
